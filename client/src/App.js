@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import "./style.css"
+// import "./style.css"
+import "./App.css"
 
 //imports
 import Product from "./components/Product"
@@ -33,6 +34,36 @@ const products = [
   {
     id: 5,
     name: "grape",
+    desc: "text",
+    price: 100
+  },
+  {
+    id: 6,
+    name: "blueberry",
+    desc: "text",
+    price: 100
+  },
+  {
+    id: 7,
+    name: "raspberry",
+    desc: "text",
+    price: 100
+  },
+  {
+    id: 8,
+    name: "tangerine",
+    desc: "text",
+    price: 100
+  },
+  {
+    id: 9,
+    name: "grapefruit",
+    desc: "text",
+    price: 100
+  },
+  {
+    id: 10,
+    name: "mango",
     desc: "text",
     price: 100
   },
@@ -86,16 +117,22 @@ class App extends Component {
 
   render() {
     return (
-      <main className="items" >
-        < ul >
-          {
-            this.state.cart.map(c => <li>{c.name} | units {c.units}</li>)
+      <main className="wholeApp">
+        <div className="items">
+          <p>Order:</p>
+          < ul >
+            {
+              this.state.cart.map(c => <li>{c.name} | units {c.units}</li>)
 
+            }
+          </ul >
+
+        </div>
+        <div className="test">
+          {
+            products.map(p => <Product key={p.id} {...p} addFunc={this.handleAddFunc.bind(this)} />)
           }
-        </ul >
-        {
-          products.map(p => <Product key={p.id} {...p} addFunc={this.handleAddFunc.bind(this)} />)
-        }
+        </div>
 
       </main >
     )
