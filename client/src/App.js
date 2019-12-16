@@ -67,6 +67,18 @@ const products = [
     desc: "text",
     price: 100
   },
+  {
+    id: 11,
+    name: "Kiwi",
+    desc: "text",
+    price: 100
+  },
+  {
+    id: 12,
+    name: "POM",
+    desc: "text",
+    price: 100
+  },
 ];
 
 class App extends Component {
@@ -79,7 +91,7 @@ class App extends Component {
         name: "Apple",
         desc: "text",
         price: 100,
-        units: 1
+        units: 1,
       }
       ]
 
