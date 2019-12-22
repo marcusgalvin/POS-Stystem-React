@@ -2,6 +2,7 @@ import React from 'react';
 
 const Product = ({ id, name, desc, img, price, addFunc }) => {
 
+  //indiv product
   return (
     <article className="product" id={id}>
       <div>
