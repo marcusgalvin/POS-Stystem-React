@@ -127,7 +127,7 @@ class App extends Component {
 
   }
 
-  //render comp
+  //render component
   render() {
     return (
       <main className="wholeApp">
