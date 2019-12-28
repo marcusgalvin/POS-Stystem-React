@@ -141,6 +141,7 @@ class App extends Component {
           </ul >
 
         </div>
+        {/* //products */}
         <div className="test">
           {
             products.map(p => <Product key={p.id} {...p} addFunc={this.handleAddFunc.bind(this)} />)
