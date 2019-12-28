@@ -1,5 +1,6 @@
 import React from 'react';
 
+//product props
 const Product = ({ id, name, desc, img, price, addFunc }) => {
 
   //indiv product
