@@ -98,7 +98,7 @@ class App extends Component {
     }
   }
 
-  //handle func
+  //handle function
   handleAddFunc(product) {
     //if the product found is the products, filter retruns an array
     const existingProduct = this.state.cart.filter(p => p.id === product.id);
