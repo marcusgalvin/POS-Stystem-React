@@ -112,7 +112,7 @@ class App extends Component {
         ...existingProduct[0],
         units: existingProduct[0].units + product.units
       }
-
+//set state
       this.setState({
         cart: [...withoutExistingProduct, updatedUnitsProduct]
       })
